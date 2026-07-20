@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пори року | Інтерактивний путівник</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Підключення шрифтів -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-summer">
+    <!-- ШАПКА САЙТУ -->
+    <header class="site-header">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <a href="#" class="logo" onclick="switchSeason('summer'); return false;">
+                Seasons<span>Guide</span>
+            </a>
+
+            <!-- Навігація -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="nav-link active" data-season="spring">Весна</a></li>
+                    <li><a href="#" class="nav-link" data-season="summer">Літо</a></li>
+                    <li><a href="#" class="nav-link" data-season="autumn">Осінь</a></li>
+                    <li><a href="#" class="nav-link" data-season="winter">Зима</a></li>
+                </ul>
+            </nav>
+
+            <!-- Додаткові елементи: Пошук + Соцмережі -->
+            <div class="header-extras">
+                <button class="search-btn" title="Пошук по сайту"></button>
+                <div class="social-icons">
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="YouTube">▶️</a>
+                </div>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ОСНОВНИЙ КОНТЕНТ -->
+    <main class="main-content">
+        <div class="container">
+            <!-- === ВЕСНА === -->
+            <section id="spring" class="season-section active">
+                <div class="hero-banner">
+                    <img src="./images/spring/spring.png" alt="Весна" class="hero-image" />
+                    <div class="hero-overlay">
+                        <h1>Весна 🌸</h1>
+                        <p>Пробудження природи та час нових надій</p>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="text-block">
+                        <h2>📖 Детальний опис</h2>
+                        <p>
+                            Весна — це не просто зміна температури, це глобальне
+                            перезавантаження екосистеми. Саме навесні активується рух соків
+                            у рослин, прокидаються комахи-запилювачі, а перелітні птахи
+                            повертаються до своїх гнізд. Для людини це період підвищення
+                            енергії та творчості.
+                        </p>
+                    </div>
+                    <div class="info-card highlight-card">
+                        <h3>💡 Порада сезону</h3>
+                        <p>
+                            <strong>Алергія:</strong> У період цвітіння берези та вільхи
+                            слідкуйте за рівнем пилку. Проветрюйте приміщення вранці та
+                            ввечері, коли концентрація алергенів найменша.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="events-section">
+                    <h2> Важливі дати весни</h2>
+                    <div class="events-grid">
+                        <div class="event-item">
+                            <span class="date">8 березня</span>
+                            <span class="title">Міжнародний жіночий день</span>
+                        </div>
+                        <div class="event-item">
+                            <span class="date">15 квітня</span>
+                            <span class="title">Великдень (Пасха) — 2026</span>
+                        </div>
+                        <div class="event-item">
+                            <span class="date">22 квітня</span>
+                            <span class="title">День Землі</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h2> Весняна галерея</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="./images/spring/spring-1.png" alt="sping">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/spring/spring-2.png" alt="sping">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/spring/spring-3.png" alt="sping">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === ЛІТО === -->
+            <section id="summer" class="season-section">
+                <div class="hero-banner">
+                    <img src="./images/summer/summer.png" alt="Літо" class="hero-image" />
+                    <div class="hero-overlay">
+                        <h1>Літо ☀️</h1>
+                        <p>Енергія сонця, свобода та незабутні враження</p>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="text-block">
+                        <h2>📖 Детальний опис</h2>
+                        <p>
+                            Літній сезон характеризується найвищою сонячною активністю.
+                            Рослини досягають піку вегетації, формуючи плоди. Для людей літо
+                            — це біологічний час для синтезу вітаміну D, зміцнення імунітету
+                            та психологічного розвантаження через відпочинок на воді.
+                        </p>
+                    </div>
+                    <div class="info-card highlight-card">
+                        <h3>💡 Порада сезону</h3>
+                        <p>
+                            <strong>Захист:</strong> Використовуйте SPF-креми навіть у
+                            похмуру погоду. Пік ультрафіолетового випромінювання припадає на
+                            11:00–16:00 — намагайтеся бути в тіні.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="events-section">
+                    <h2>📅 Важливі дати літа</h2>
+                    <div class="events-grid">
+                        <div class="event-item">
+                            <span class="date">1 червня</span>
+                            <span class="title">Міжнародний день захисту дітей</span>
+                        </div>
+                        <div class="event-item">
+                            <span class="date">28 червня</span>
+                            <span class="title">День Конституції України</span>
+                        </div>
+                        <div class="event-item">
+                            <span class="date">24 серпня</span>
+                            <span class="title">День Незалежності України</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h2>️ Літня галерея</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="./images/summer/summer-1.png" alt="summer">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/summer/summer-2.png" alt="summer">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/summer/summer-3.png" alt="summer">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === ОСІНЬ === -->
+            <section id="autumn" class="season-section">
+                <div class="hero-banner">
+                    <img src="./images/autumn/autumn.png" alt="Осінь" class="hero-image" />
+                    <div class="hero-overlay">
+                        <h1>Осінь 🍁</h1>
+                        <p>Золота пора мудрості, затишку та врожаю</p>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="text-block">
+                        <h2>📖 Детальний опис</h2>
+                        <p>
+                            Осінь — це час підготовки до спокою. Хлорофіл руйнується,
+                            оголюючи жовті та червоні пігменти листя. Тварини роблять запаси
+                            їжі, а люди збирають останній врожай. Це ідеальний час для
+                            інтроверсії, читання книг та планування майбутнього.
+                        </p>
+                    </div>
+                    <div class="info-card highlight-card">
+                        <h3>💡 Порада сезону</h3>
+                        <p>
+                            <strong>Імунітет:</strong> Введіть у раціон сезонні овочі:
+                            гарбуз, буряк, капусту. Вони багаті на клітковину та вітаміни,
+                            необхідні для підготовки організму до зими.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="events-section">
+                    <h2>📅 Важливі дати осені</h2>
+                    <div class="events-grid">
+                        <div class="event-item">
+                            <span class="date">1 вересня</span>
+                            <span class="title">День знань</span>
+                        </div>
+                        <div class="event-item">
+                            <span class="date">14 жовтня</span>
+                            <span class="title">Покрова Пресвятої Богородиці</span>
+                        </div>
+                        <div class="event-item">
+                            <span class="date">1 листопада</span>
+                            <span class="title">День усіх святих (новий календар)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h2>🍁 Осіння галерея</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="./images/autumn/autumn-1.png" alt="autumn">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/autumn/autumn-2.png" alt="autumn">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/autumn/autumn-3.png" alt="autumn">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === ЗИМА === -->
+            <section id="winter" class="season-section">
+                <div class="hero-banner">
+                    <img src="./images/winter/winter.png" alt="Зима" class="hero-image" />
+                    <div class="hero-overlay">
+                        <h1>Зима ❄️</h1>
+                        <p>Час тиші, святкових чудес та родинного тепла</p>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="text-block">
+                        <h2>📖 Детальний опис</h2>
+                        <p>
+                            Зима — це період анабіозу для природи. Сніговий покрив діє як
+                            термоізолятор, захищаючи кореневі системи рослин від вимерзання.
+                            Для людини зима є часом соціальної активності всередині
+                            приміщень, святкування та підбиття підсумків року.
+                        </p>
+                    </div>
+                    <div class="info-card highlight-card">
+                        <h3>💡 Порада сезону</h3>
+                        <p>
+                            <strong>Шкіра:</strong> Мороз і опалення сушать шкіру.
+                            Використовуйте жирні креми за 30 хв до виходу на вулицю та
+                            обов'язково зволожуйте повітря в оселі.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="events-section">
+                    <h2> Важливі дати зими</h2>
+                    <div class="events-grid">
+                        <div class="event-item">
+                            <span class="date">19 грудня</span>
+                            <span class="title">День Святого Миколая</span>
+                        </div>
+                        <div class="event-item">
+                            <span class="date">25 грудня</span>
+                            <span class="title">Різдво Христове (новоюліанський календар)</span>
+                        </div>
+                        <div class="event-item">
+                            <span class="date">31 грудня</span>
+                            <span class="title">Щедрий вечір (Старий Новий рік)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h2>📷 Зимова галерея</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="./images/winter/winter-1.png" alt="winter">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/winter/winter-2.png" alt="winter">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/winter/winter-3.png" alt="winter">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <!-- Колонка 1: Про проект -->
+            <div class="footer-col">
+                <h3>Про проект</h3>
+                <p>Інтерактивний путівник порами року. Ми допомагаємо відкрити красу природи, слідкувати за сезонними
+                    змінами та планувати дозвілля.</p>
+            </div>
+
+            <!-- Колонка 2: Навігація -->
+            <div class="footer-col">
+                <h3>Пори року</h3>
+                <ul>
+                    <li><a href="#" onclick="switchSeason('spring'); return false;">🌸 Весняний календар</a></li>
+                    <li><a href="#" onclick="switchSeason('summer'); return false;">☀️ Літні поради</a></li>
+                    <li><a href="#" onclick="switchSeason('autumn'); return false;">🍁 Осіння галерея</a></li>
+                    <li><a href="#" onclick="switchSeason('winter'); return false;">❄️ Зимові свята</a></li>
+                </ul>
+            </div>
+
+            <!-- Колонка 3: Корисні ресурси (НОВЕ) -->
+            <div class="footer-col">
+                <h3>Ресурси</h3>
+                <ul>
+                    <li><a href="#">️ Прогноз погоди</a></li>
+                    <li><a href="#">🗺️ Карта парків України</a></li>
+                    <li><a href="#">📚 Бібліотека сезонів</a></li>
+                    <li><a href="#"> Підписка на новини</a></li>
+                </ul>
+            </div>
+
+            <!-- Колонка 4: Контакти (ОНОВЛЕНО) -->
+            <div class="footer-col contacts-col">
+                <h3>Контакти</h3>
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-icon">✉️</span>
+                        <a href="mailto:hello@seasonsguide.ua">hello@seasonsguide.ua</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📞</span>
+                        <a href="tel:+380441234567">+38 (044) 123-45-67</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📍</span>
+                        <span>м. Київ, вул. Хрещатик, 1</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">🕒</span>
+                        <span>Пн-Пт: 9:00 – 18:00</span>
+                    </li>
+                </ul>
+
+                <div class="social-links">
+                    <a href="#" class="social-btn fb" title="Facebook">f</a>
+                    <a href="#" class="social-btn ig" title="Instagram">in</a>
+                    <a href="#" class="social-btn yt" title="YouTube">▶</a>
+                    <a href="#" class="social-btn tg" title="Telegram">tg</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Нижня смужка з копірайтом -->
+        <div class="footer-bottom">
+            <div class="container bottom-content">
+                <p>&copy; 2026 SeasonsGuide. Всі права захищено.</p>
+                <div class="legal-links">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
